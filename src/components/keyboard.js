@@ -47,6 +47,8 @@ create('keyboard', {
 			flex-basis: 2rem;
 			height: 2rem;
 			justify-content: center;
+			overflow: hidden;
+			position: relative;
 		}
 		.delete,
 		.tab,
@@ -76,7 +78,7 @@ create('keyboard', {
 			color: black;
 		}
 		.bc {
-			width: 2.5rem;
+			flex-basis: calc(2rem + 0.33rem);
 		}
 		.space {
 			flex-grow: 1;
@@ -89,6 +91,16 @@ create('keyboard', {
 		:host([shift]) .shift {
 			color: var(--finger-color);
 			font-weight: bold;
+		}
+		.active:before {
+			background: var(--finger-color);
+			bottom: 0;
+			content: '';
+			left: 0;
+			opacity: 0.1;
+			position: absolute;
+			right: 0;
+			top: 0;
 		}
 	`,
 })

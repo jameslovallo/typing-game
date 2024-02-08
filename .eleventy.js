@@ -9,7 +9,6 @@ module.exports = function (eleventyConfig) {
 		eleventyConfig.addGlobalData(key, meta[key])
 	)
 	eleventyConfig.addPassthroughCopy('src/**/*')
-	// Return your Object options:
 	return {
 		dir: {
 			input: 'pages',

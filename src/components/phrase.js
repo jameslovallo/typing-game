@@ -2,6 +2,7 @@ import { makeConfetti } from '../utils/confetti.js'
 import { create, css, html } from '//unpkg.com/cuick-dev'
 
 import './guide.js'
+const yay = new Audio('/src/assets/sound/yay.mp3')
 
 create('phrase', {
 	phrase: '',
@@ -21,6 +22,7 @@ create('phrase', {
 				$correct.value = 'correct'
 				if ($matched.value === this.phrase) {
 					makeConfetti()
+					yay.play()
 					setTimeout(() => {
 						loaded++
 						if (loaded === this.children.length) loaded = 0
