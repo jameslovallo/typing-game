@@ -1,6 +1,7 @@
 {
 	"name": "typing-game",
 	"scripts": {
-		"Dev": "npx @11ty/eleventy --serve --incremental"
+		"Dev Server": "npx @11ty/eleventy --serve --incremental",
+		"Publish to Netlify": "ntl deploy --prod"
 	}
 }

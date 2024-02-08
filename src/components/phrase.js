@@ -2,6 +2,7 @@ import { makeConfetti } from '../utils/confetti.js'
 import { create, css, html } from '//unpkg.com/cuick-dev'
 
 import './guide.js'
+const fail = new Audio('/src/assets/sound/fail.mp3')
 const yay = new Audio('/src/assets/sound/yay.mp3')
 
 create('phrase', {
@@ -29,7 +30,10 @@ create('phrase', {
 						load()
 					}, 5000)
 				}
-			} else $correct.value = 'incorrect'
+			} else {
+				$correct.value = 'incorrect'
+				fail.play()
+			}
 			setTimeout(() => ($correct.value = null), 500)
 		})
 	},
