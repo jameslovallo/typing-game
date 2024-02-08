@@ -1,0 +1,6 @@
+{
+	"name": "typing-game",
+	"scripts": {
+		"Dev": "npx @11ty/eleventy --serve --incremental"
+	}
+}
