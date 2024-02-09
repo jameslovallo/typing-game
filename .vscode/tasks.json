@@ -3,9 +3,9 @@
 	"tasks": [
 		{
 			"type": "npm",
-			"script": "Dev",
+			"script": "Dev Server",
 			"problemMatcher": [],
-			"label": "npm: Dev",
+			"label": "npm: Dev Server",
 			"detail": "npx @11ty/eleventy --serve --incremental",
 			"runOptions": { "runOn": "folderOpen" }
 		}

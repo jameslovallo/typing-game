@@ -72,7 +72,7 @@ create('phrase', {
 		slot::slotted(*) {
 			display: block;
 			object-fit: cover;
-			width: 100%;
+			min-width: 100%;
 		}
 		.prompt {
 			align-items: center;

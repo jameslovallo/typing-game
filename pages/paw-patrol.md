@@ -1,3 +1,7 @@
+---
+title: Paw Patrol
+---
+
 <c-phrase>
 	<img src="/src/assets/pawpatrol/chase.jpg" alt="chase is on the case">
 	<img src="/src/assets/pawpatrol/rubble.jpg" alt="rubble on the double">
