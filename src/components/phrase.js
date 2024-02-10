@@ -70,9 +70,14 @@ create('phrase', {
 			width: 32rem;
 		}
 		slot::slotted(*) {
+			min-width: 100%;
+			width: 100%;
+		}
+		slot::slotted(img) {
 			display: block;
 			object-fit: cover;
 			min-width: 100%;
+			width: 100%;
 		}
 		.prompt {
 			align-items: center;
